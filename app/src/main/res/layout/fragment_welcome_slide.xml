@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6"
+            android:orientation="vertical"
+            app:layout_parallaxFactor="0.1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="50dp"
+                    android:src="@drawable/shh"
+                    android:id="@+id/welcome_icon"
+                    app:layout_parallaxFactor="0.1" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_parallaxFactor="0.1">
+
+            <TextView
+                android:id="@+id/welcomett"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="@string/Welcome_text"
+                android:textAlignment="center"
+                android:textColor="@color/colorGoldenTextDark"
+                android:textSize="@dimen/font_intro_welcome_title"
+                app:layout_parallaxFactor="0.1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            app:layout_parallaxFactor="0.1">
+
+            <TextView
+                android:id="@+id/welcome_span"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:text="@string/Welcome_text_span"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhiteText"
+                android:textSize="@dimen/font_intro_welcome_span"
+                app:layout_parallaxFactor="0.1" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7">
+
+            <TextView
+                android:id="@+id/get_started"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/get_started"
+                android:textAlignment="center"
+                android:textColor="@color/colorGoldenTextDark"
+                android:textSize="@dimen/font_intro_welcome_get_started" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

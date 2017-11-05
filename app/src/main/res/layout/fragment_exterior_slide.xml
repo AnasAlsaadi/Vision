@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<agency.tango.materialintroscreen.parallax.ParallaxLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_parallaxFactor="0.1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical"
+            android:weightSum="2"
+            app:layout_parallaxFactor="0.1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.4"
+                app:layout_parallaxFactor="0.1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="@string/exterior"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGoldenTextDark"
+                    android:textSize="@dimen/font_intro_title"
+                    app:layout_parallaxFactor="0.1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_weight="0.5"
+                android:gravity="top"
+                app:layout_parallaxFactor="0.1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/clipartline"
+                    app:layout_parallaxFactor="0.1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/margin_center_image"
+            android:layout_marginStart="@dimen/margin_center_image"
+            android:layout_weight="1.1"
+            android:background="@drawable/exterior"
+            app:layout_parallaxFactor="0.1">  <View
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGolden"
+            android:alpha="0.1"
+            android:layout_alignParentTop="true" /></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            app:layout_parallaxFactor="0.1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="@dimen/margin_top_intro_text"
+                android:lineSpacingExtra="@dimen/line_space_intro_text"
+                android:text="@string/exterior_text"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhiteTextDark"
+                android:textSize="@dimen/text_size_intro_text"
+
+                app:layout_parallaxFactor="0.1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</agency.tango.materialintroscreen.parallax.ParallaxLinearLayout>

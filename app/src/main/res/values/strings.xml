@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">VisionAxis</string>
+
+    <string name="Welcome_text">Welcome To VisionAxis</string>
+    <string name="Welcome_text_span">Interior &amp; Exterior Design</string>
+    <string name="get_started">Get Started With Our Services</string>
+    <string name="commercial">COMMERCIAL</string>
+    <string name="commercial_text">Through great planning, our specialized interior designers maintain your aims and goals in an accurate way. </string>
+    <string name="exterior">EXTERIOR</string>
+    <string name="exterior_text">Through great planning, our specialized interior designers maintain your aims and goals in an accurate way. </string>
+    <string name="residential">RESIDENTIAL</string>
+    <string name="residential_text">Through great planning, our specialized interior designers maintain your aims and goals in an accurate way. </string>
+    <string name="skip"><u>Skip</u></string>
+    <string name="sign_via_email">sign in via email address</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signin">Sign In</string>
+    <string name="or"> OR </string>
+    <string name="not_have_account"> Not Have account? </string>
+    <string name="signup"> <u>SignUp</u> </string>
+    <string name="not_want_now"> Not Want Now?</string>
+    <string name="register"> Creat Account </string>
+    <string name="user_name"> User Name  </string>
+    <string name="already_have_account"> Already Have Account ? <u>Sign In</u>  </string>
+
+
+    <string name="profile">Category</string>
+    <string name="feed">FEED</string>
+    <string name="category">Category</string>
+    <string name="category2">Category2</string>
+</resources>

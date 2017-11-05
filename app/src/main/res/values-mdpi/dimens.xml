@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="logo_margin_bottom">60dp</dimen>
+
+    <dimen name="margin_linear_layout_line">20dp</dimen>
+    <dimen name="margin_inputs">18dp</dimen>
+    <dimen name="font_intro_title">40sp</dimen>
+    <dimen name="drawablePadding">9dp</dimen>
+    <dimen name="paddingBottomInput">14dp</dimen>
+    <dimen name="buttonTextSize">19sp</dimen>
+    <dimen name="layout_margin_social">11dp</dimen>
+    <dimen name="font_intro_welcome_title">25sp</dimen>
+    <dimen name="font_intro_welcome_span">12dp</dimen>
+    <dimen name="font_intro_welcome_get_started">17sp</dimen>
+
+    <dimen name="margin_top_intro_text">15dp</dimen>
+
+    <dimen name="line_space_intro_text">1dp</dimen>
+
+    <dimen name="text_size_intro_text">15sp</dimen>
+
+    <dimen name="margin_center_image">10dp</dimen>
+
+    <dimen name="height_elem_category">175dp</dimen>
+    <dimen name="font_size_elem_category">27sp</dimen>
+    <dimen name="font_size_elem_sub_category">19sp</dimen>
+
+    <dimen name="guillotine_small_margin">24dp</dimen>
+    <dimen name="guillotine_medium_margin">48dp</dimen>
+    <dimen name="guillotine_large_margin">100dp</dimen>
+    <dimen name="guillotine_divider_height">40dp</dimen>
+
+    <dimen name="guillotine_item_text_size">25sp</dimen>
+    <dimen name="guillotine_actionbar_background_view_height">35dp</dimen>
+</resources>

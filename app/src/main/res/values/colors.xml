@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#050505</color>
+    <color name="colorPrimaryDark">#050505</color>
+    <color name="colorAccent">#bcbdc0</color>
+
+    <color name="colorBlack">#292b2c</color>
+    <color name="colorBlackDark">#222</color>
+    <color name="colorGolden">#ddc276</color>
+    <color name="colorGoldenDark">#d0b271</color>
+    <color name="colorGoldenText">#dab779</color>
+    <color name="colorGoldenTextDark">#c7a364</color>
+    <color name="colorWhite">#e1e1e2</color>
+    <color name="colorWhiteDark">#cccdcf</color>
+    <color name="colorWhiteText">#bcbdc0</color>
+    <color name="colorWhiteTextDark">#87888a</color>
+
+
+    <color name="guillotine_background">#050505</color>
+    <color name="guillotine_background_dark">#202020</color>
+    <color name="selected_item_color">#dab779</color>
+</resources>

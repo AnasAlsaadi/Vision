@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/auth"
+    android:focusableInTouchMode="true">
+
+    <View
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:alpha="0.85"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_via_email"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGoldenTextDark"
+                    android:textSize="@dimen/font_intro_welcome_get_started" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/margin_inputs"
+            android:layout_marginStart="@dimen/margin_inputs"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhiteText"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="@dimen/drawablePadding"
+                    android:drawableStart="@drawable/email"
+                    android:hint="@string/email"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/paddingBottomInput" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhiteText"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="@dimen/drawablePadding"
+                    android:drawableStart="@drawable/password"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/paddingBottomInput" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/margin_inputs"
+                android:layout_marginStart="@dimen/margin_inputs"
+                android:layout_weight="0.6">
+
+                <com.unstoppable.submitbuttonview.SubmitButton
+                    android:id="@+id/login_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    app:buttonColor="@color/colorGolden"
+                    app:buttonText="@string/signin"
+                    app:buttonTextSize="@dimen/buttonTextSize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/margin_linear_layout_line"
+            android:layout_marginStart="@dimen/margin_linear_layout_line"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.25"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorWhiteText"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/or"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGoldenText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.25"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorWhiteText"></View>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <in.championswimmer.libsocialbuttons.SocialFab
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin_social"
+                android:layout_weight="1"
+                app:social="facebook" />
+
+
+            <in.championswimmer.libsocialbuttons.SocialFab
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin_social"
+                android:layout_weight="1"
+                app:social="google" />
+
+            <in.championswimmer.libsocialbuttons.SocialFab
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin_social"
+                android:layout_weight="1"
+                app:social="twitter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="@dimen/margin_linear_layout_line"
+                android:layout_marginStart="@dimen/margin_linear_layout_line"
+                android:background="@color/colorWhiteText"></View>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_marginEnd="@dimen/margin_linear_layout_line"
+            android:layout_marginStart="@dimen/margin_linear_layout_line"
+            android:layout_weight="0.4"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+
+                android:clickable="true"
+                android:onClick="onClickSignUp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.45"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:gravity="top"
+                        android:text="@string/not_have_account"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhiteText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:gravity="top"
+                        android:text="@string/signup"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhiteText" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorWhiteText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="onClickSkip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.45"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:gravity="top"
+                        android:text="@string/not_want_now"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhiteText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.3">
+
+                    <TextView
+                        android:id="@+id/skip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:gravity="top"
+                        android:text="@string/skip"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhiteText" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
